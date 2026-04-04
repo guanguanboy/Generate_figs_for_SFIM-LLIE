@@ -33,11 +33,11 @@ def save_images(image_floder_name, image_name,location1=[],location2=[]):
 
     #绘制红色框并crop其中的内容 
     Image_width = 32
-
+    Image_height = 16
     x1 = location1[0]
     x2 = x1+Image_width
     y1 = location1[1]
-    y2 = y1+Image_width
+    y2 = y1+Image_height
 
     bbox = (x1, y1, x2, y2)
 
@@ -77,7 +77,7 @@ def save_images(image_floder_name, image_name,location1=[],location2=[]):
     x1 = location2[0]
     x2 = x1+Image_width
     y1 = location2[1]
-    y2 = y1+Image_width
+    y2 = y1+Image_height
 
     bbox = (x1, y1, x2, y2)
     # 截取矩形区域
@@ -144,7 +144,7 @@ bbox = (50, 50, 150, 150)  # 矩形框左上角和右下角坐标 (x1, y1, x2, y
 
 draw_rectangle(image_path, output_path, bbox)
 """
-image_floder_name = 'LOL-v2-real_for_paper'
+image_floder_name = 'LOLv2-real'
 
 image_floder_path = os.path.join('images', image_floder_name)
 # 遍历文件夹中的所有文件名
