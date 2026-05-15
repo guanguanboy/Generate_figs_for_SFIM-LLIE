@@ -30,8 +30,8 @@ def resize_images(input_dir, output_dir, target_size=(600, 400)):
 
 if __name__ == "__main__":
     # --- 请在此处修改你的路径 ---
-    input_folder = 'images/LOLv2-syn'   # 源图片文件夹
-    output_folder = 'images/LOLv2-syn-resized' # 处理后的存放文件夹
+    input_folder = 'images/SID'   # 源图片文件夹
+    output_folder = 'images/SID-resized' # 处理后的存放文件夹
     
     resize_images(input_folder, output_folder)
     print("\n所有图片处理完成！")
